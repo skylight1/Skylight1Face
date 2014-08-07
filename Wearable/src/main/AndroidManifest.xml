@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.skylight1.face" >
+
+    <uses-feature android:name="android.hardware.type.watch" />
+    <uses-permission android:name="com.google.android.permission.PROVIDE_BACKGROUND" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-sdk android:minSdkVersion="20" android:targetSdkVersion="20" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.DeviceDefault" >
+        <activity
+            android:name=".Skylight1FaceActivity"
+            android:allowEmbedded="true"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar"
+            android:label="@string/app_name" >
+            <meta-data
+                android:name="com.google.android.clockwork.home.preview"
+                android:resource="@drawable/skylight1logo" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.google.android.clockwork.home.category.HOME_BACKGROUND" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
