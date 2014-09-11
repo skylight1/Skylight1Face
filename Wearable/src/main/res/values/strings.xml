@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">skylight1face</string>
-    <string name="time_round">10:08pm</string>
-    <string name="time_square">10:08pm</string>
+    <string name="time_round">10:08:59</string>
+    <string name="time_square">10:08:59</string>
 
 </resources>
