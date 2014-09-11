@@ -104,10 +104,10 @@ public class Skylight1FaceActivity extends Activity {
         int hour = calendar.get(Calendar.HOUR);
         int minutes = calendar.get(Calendar.MINUTE);
         int seconds = 0;
-        String time = hour+":"+minutes;
+        String time = String.format("%2d:%02d", hour, minutes);
         if (!isDimmed()) {
             seconds = calendar.get(Calendar.SECOND);
-            time = time+":"+seconds;
+            time = time+":"+String.format("%02d",seconds);
         }
         textView.setText(time);
     }

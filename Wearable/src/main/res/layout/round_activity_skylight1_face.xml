@@ -12,9 +12,11 @@
         android:id="@+id/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:text="@string/time_round"
         android:textColor="@color/black"
-        android:textSize="40sp"
-        android:text="@string/time_round" />
+        android:layout_marginTop="16dp"
+        android:textSize="32sp" />
+
 </RelativeLayout>
